@@ -17,6 +17,18 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Scheme
 require("lazy").setup({
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp',
+    "williamboman/mason.nvim",
+    -- vsnip
+    'hrsh7th/cmp-vsnip',    -- { name = 'vsnip' }
+    'hrsh7th/vim-vsnip',
+    'rafamadriz/friendly-snippets',
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
     { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }},
     { "kyazdani42/nvim-tree.lua", event = "VimEnter", dependencies = "nvim-tree/nvim-web-devicons" },
